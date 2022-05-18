@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora 2</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<center>
+    <header>
+        <center>
+            <h1> Calculadora</h1>
+        </center>
+    </header>
+    <table width="15%" border="1">
+        <tr>
+            <td colspan="4" align="center">
+                <input name="display" type="text" class="color_display" id="display" size="25"></td>
+        </tr>
+        <tr>
+            <td width="25"><input name="button" type="button" class="numero" value="+" onclick="suma()"></td>
+            <td width="25"><input name="button" type="button" class="numero" value="-" onclick="resta()"></td>
+            <td width="25"><input name="button" type="button" class="numero" value="x" onclick="multiplicacion()"></td>
+            <td width="25"><input name="button" type="button" class="numero" value="÷" onclick="division()"></td>
+        </tr>
+        <tr>
+            <td><input name="button" type="button" class="numero" value="7" onclick="mostrar_numeros(7)" id="boton5"></td>
+            <td><input name="button" type="button" class="numero" value="8" onclick="mostrar_numeros(8)" id="boton6"></td>
+            <td><input name="button" type="button" class="numero" value="9" onclick="mostrar_numeros(9)" id="boton7"></td>
+            <td><input name="button" type="button" class="numero" value="sin" onclick="seno()" id="boton15"></td>
+        </tr>
+        <tr>
+            <td><input name="button" type="button" class="numero" value="4" onclick="mostrar_numeros(4)" id="boton8"></td>
+            <td><input name="button" type="button" class="numero" value="5" onclick="mostrar_numeros(5)" id="boton9"></td>
+            <td><input name="button" type="button" class="numero" value="6" onclick="mostrar_numeros(6)" id="boton10"></td>
+            <td><input name="button" type="button" class="numero" value="cos" onclick="coseno()" id="boton15"></td>
+
+        </tr>
+        <tr>
+            <td><input name="button" type="button" class="numero" value="3" onclick="mostrar_numeros(3)" id="boton11"></td>
+            <td><input name="button" type="button" class="numero" value="2" onclick="mostrar_numeros(2)" id="boton12"></td>
+            <td><input name="button" type="button" class="numero" value="1" onclick="mostrar_numeros(1)" id="boton13"></td>
+            <td><input name="button" type="button" class="numero" value="tan" onclick="tangente()" id="boton15"></td>
+
+        </tr>
+        <tr>
+            <td><input name="button" type="button" class="numero" value="%" onclick="Porcent('%')" id="boton15"></td>
+            <td><input name="button" type="button" class="numero" value="0" onclick="mostrar_numeros(0)" id="boton13"></td>
+            <td><input name="button" type="button" class="Igual" value="=" onclick="Igual()" id="boton16"></td>
+            <td><input name="button" type="button" class="Borrar" value="Borrar" onclick="Borrar()" id="boton14"></td>
+
+        </tr>
+</center>
+</table>
+<script src="Javascript/Calcu.js"></script>
+
+</html>
